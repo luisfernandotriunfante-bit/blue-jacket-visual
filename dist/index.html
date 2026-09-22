@@ -12,40 +12,14 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230d0d0e'/%3E%3Cpath d='M18 15h20c8 0 12 4 12 10 0 5-3 8-7 9 5 1 8 5 8 10 0 8-6 12-15 12H18z' fill='%23e11429'/%3E%3Cpath d='M29 25h8c3 0 5-1 5-4s-2-4-5-4h-8zm0 20h10c4 0 6-2 6-5s-2-5-6-5H29z' fill='%23f2f2f0'/%3E%3C/svg%3E" />
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <div class="brand">
-        <div class="brand-line"><span class="brand-mark"></span>BLUE <span>JACKET</span></div>
-        <div class="brand-sub">OPERAÇÃO COMERCIAL · DEMO</div>
-      </div>
-      <div class="nav-title">Navegação</div>
-      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal"></nav>
-      <div class="sidebar-footer">
-        <div class="eyebrow">Distribuidor</div>
-        <strong>MCD Triunfante Brasil</strong>
-        <span>Campo Grande / MS</span>
-        <div class="demo-dot"><i></i> Ambiente demonstrativo</div>
-      </div>
-    </aside>
-    <main class="main-content">
-      <header class="topbar">
-        <button class="menu-button" id="menu-button" aria-label="Abrir navegação"><span></span><span></span></button>
-        <div class="title-block">
-          <div class="breadcrumb" id="breadcrumb">BLUE JACKET / ESTOQUE</div>
-          <h1 id="page-title">Estoque</h1>
-        </div>
-        <div class="top-actions">
-          <label class="search"><span>⌕</span><input id="global-search" type="search" placeholder="Buscar no painel…" /></label>
-          <button class="period-button">Setembro 2026 <span>⌄</span></button>
-          <button class="icon-button" data-toast="Você está em um protótipo visual"><span>♧</span><i></i></button>
-          <button class="primary-button" data-toast="Exportação simulada — nenhum arquivo foi gerado">Exportar relatório</button>
-          <button class="avatar" data-toast="Perfil: Operação Blue Jacket">LT</button>
-        </div>
-      </header>
-      <section class="subtabs" id="subtabs" aria-label="Navegação da seção"></section>
-      <section id="page-content" class="page-content"></section>
-    </main>
-  </div>
+  <header class="bj-header">
+    <button class="menu-button" id="menu-button" aria-label="Abrir navegação"><span></span><span></span><span></span></button>
+    <div class="bj-logo" aria-label="Blue Jacket"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 10 20 4l14 6-3 18-11 8-11-8z"/><path d="m12 14 8 7 8-7M20 11v19"/></svg><strong>BLUE JACKET</strong></div>
+    <span class="bj-subtitle">Acompanhamento comercial</span>
+    <span class="demo-tag">MVP VISUAL · DADOS FICTÍCIOS</span>
+  </header>
+  <aside class="sidebar" id="sidebar"><div class="side-head">NAVEGAÇÃO</div><nav class="primary-nav" id="primary-nav" aria-label="Navegação principal"></nav><small>Protótipo sem lógica operacional</small></aside>
+  <main class="main-content"><section class="subtabs" id="subtabs" aria-label="Navegação da tela"></section><section id="page-content" class="page-content"></section></main>
   <div class="toast" id="toast" role="status"></div>
   <script src="./app.js"></script>
 </body>
